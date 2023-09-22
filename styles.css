@@ -1,0 +1,54 @@
+body {
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+#countdown {
+    font-size: 48px;
+    color: #e74c3c; /* Red color */
+    margin-top: 20px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#claimButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db; /* Blue color */
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#claimButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
